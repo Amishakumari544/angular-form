@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+}
+
+.mat-toolbar-single-row {
+  padding: 0 !important;
+}
+.mat-menu-item {
+  color: #fff;
+}
+
+.form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  padding: 10px;
+}
+.fas {
+  color: #fff;
+  margin-right: 3px;
+}
+.card {
+  width: auto;
+  margin-bottom: 10px;
+}
+.form-element {
+  padding: 5px 0px 25px 2px;
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+}
+.pink {
+  background-color: #e70074 !important;
+  color: #fff;
+  text-transform: uppercase;
+}

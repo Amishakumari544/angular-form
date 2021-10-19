@@ -1,0 +1,39 @@
+<mat-toolbar class="mat-toolbar">
+  <mat-nav-list class="list-horizontal mat-toolbar">
+    <mat-list-item>
+      <span mat-menu-item
+        ><i class="fas fa-arrow-left"></i> Change Password</span
+      >
+    </mat-list-item>
+  </mat-nav-list>
+</mat-toolbar>
+
+<div class="container" *ngIf="!post; else forminfo" novalidate>
+  <mat-card class="card">
+    <form [formGroup]="formGroup" class="form">
+      <mat-form-field class="form-element">
+        <input matInput placeholder="Old Password" formControlName="oldpw" />
+      </mat-form-field>
+
+      <mat-form-field class="form-element">
+        <input matInput placeholder="New Password" formControlName="newpw" />
+      </mat-form-field>
+      <mat-form-field class="form-element">
+        <input
+          matInput
+          placeholder="Retype New Password"
+          formControlName="newpw"
+        />
+      </mat-form-field>
+    </form>
+  </mat-card>
+  <div class="form-element">
+    <button mat-raised-button type="submit" class="button pink">Update</button>
+  </div>
+</div>
+
+<ng-template #forminfo>
+  <div class="container">
+    {{ post | json }}
+  </div>
+</ng-template>
